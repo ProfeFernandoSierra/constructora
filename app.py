@@ -18,7 +18,7 @@ try:
         costo_bruto = costo_mano_de_obra + costo_de_materiales
         valor_iva = costo_bruto * IVA
         costo_total = costo_bruto + valor_iva
-        
+        ct_redondeado = round(costo_total, 2)
         if costo_total <= PRESUPUESTO_MAXIMO:
             estado = "Dentro del presupuesto"
         elif costo_total > PRESUPUESTO_MAXIMO and costo_total <= presupuesto_elevado_en_10:
@@ -29,7 +29,7 @@ try:
         os.system("cls")
         print(f"******")    
         print(f"Nombre del proyecto: {nombre_del_proyecto}")
-        print(f"Costo total: ${costo_total}")
+        print(f"Costo total: ${ct_redondeado}")
         print(f"Estado del proyecto: {estado}")
         print(f"******")
         
