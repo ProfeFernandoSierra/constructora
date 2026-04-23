@@ -3,7 +3,7 @@ os.system("cls")
 # El programa debe: 
 IVA = 0.19 
 PRESUPUESTO_MAXIMO = 50000000
-presupuesto_elevado_en_10 = PRESUPUESTO_MAXIMO * 0.90
+presupuesto_elevado_en_10 = PRESUPUESTO_MAXIMO * 1.10
 try:
     
     nombre_del_proyecto = input("ingrese nombre del proyecto\n").title()
